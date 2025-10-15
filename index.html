@@ -1,1 +1,40 @@
+Here's a minimal static web app that meets your requirements. The webpage displays "Hello World" in blue color and centers it on the page using inline CSS and JavaScript.
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="hello">Hello World</h1>
+    <script>
+        // You can add any JavaScript functionality here if needed
+        console.log("Page loaded successfully");
+    </script>
+</body>
+</html>
+```
+
+### Explanation:
+- **HTML Structure**: The document has a simple structure with a `<head>` for metadata and a `<body>` where the content is displayed.
+- **CSS**: Inline styles are used to center the text both vertically and horizontally using Flexbox. The background color is set to a light gray, and the text color is set to blue.
+- **JavaScript**: A simple script logs a message to the console when the page loads. You can expand this section for more functionality if needed.
+
+You can copy and paste this code into an HTML file and open it in a web browser to see the result.
+<!-- build-id: 2025-10-15T08:37:04.982230 -->
