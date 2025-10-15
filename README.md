@@ -2,7 +2,7 @@
 
 Generated app for:
 
-> Update the previous Hello World app. Add a bold heading 'Welcome to Round 2' above the text and include a button below that changes the text color when clicked.
+> Update the app again. Add a gradient background and make the button text say 'Click Me!'.
 
 ---
 MIT License
