@@ -1,1 +1,40 @@
-<h1>Mock App (Round 1) for hello-world-task</h1><p>Create a simple webpage that displays 'Hello World' in blue color and centered on the page.</p>
+Here's a minimal static web app that meets your requirements. The webpage displays "Hello World" in blue color and centers it on the page using inline CSS and JavaScript.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World App</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="greeting">Hello World</h1>
+
+    <script>
+        // You can add any JavaScript functionality here if needed
+        console.log("Page loaded successfully");
+    </script>
+</body>
+</html>
+```
+
+### Explanation:
+- **HTML Structure**: The document contains a simple structure with a heading (`<h1>`) that displays "Hello World".
+- **CSS**: Inline CSS is used to center the text both vertically and horizontally using Flexbox. The background color is set to a light gray for better contrast.
+- **JavaScript**: A simple script logs a message to the console when the page loads. You can expand this if you need more functionality in the future.
+
+You can copy this code into an HTML file and open it in a web browser to see the result.
