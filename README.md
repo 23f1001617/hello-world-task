@@ -2,7 +2,7 @@
 
 Generated app for:
 
-> Update the app again. Add a gradient background and make the button text say 'Click Me!'.
+> Add a gradient background and a button labeled 'Click Me!' below the text that toggles the color between blue and red.
 
 ---
 MIT License
