@@ -3,43 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradient Background Toggle</title>
+    <title>Round 4</title>
     <style>
         body {
             height: 100vh;
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             margin: 0;
-            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            background: linear-gradient(to right, #4facfe, #00f2fe);
             color: white;
             font-family: Arial, sans-serif;
-            text-align: center;
+        }
+        #helloWorld {
+            font-size: 2em;
+            transition: color 0.3s;
         }
         button {
             margin-top: 20px;
             padding: 10px 20px;
-            font-size: 16px;
+            font-size: 1em;
+            cursor: pointer;
             border: none;
             border-radius: 5px;
-            cursor: pointer;
+            background-color: white;
+            color: #4facfe;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        button:hover {
+            background-color: #4facfe;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Web App!</h1>
-    <button id="colorToggleBtn">Click Me!</button>
+    <h1>Welcome to Round 4</h1>
+    <div id="helloWorld">Hello World</div>
+    <button onclick="toggleColor()">Toggle Text Color</button>
 
     <script>
-        const button = document.getElementById('colorToggleBtn');
-        let isBlue = false;
+        let isDefaultColor = true;
 
-        button.addEventListener('click', () => {
-            document.body.style.backgroundColor = isBlue ? 'red' : 'blue';
-            isBlue = !isBlue;
-        });
+        function toggleColor() {
+            const helloWorld = document.getElementById('helloWorld');
+            helloWorld.style.color = isDefaultColor ? 'yellow' : 'white';
+            isDefaultColor = !isDefaultColor;
+        }
     </script>
 </body>
 </html>
-<!-- build-id: 2025-10-15T09:44:55.531366 -->
+<!-- build-id: 2025-10-15T09:47:25.647428 -->
