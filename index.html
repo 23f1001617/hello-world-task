@@ -3,49 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimal Static Web App</title>
+    <title>Gradient Background Toggle</title>
     <style>
         body {
             height: 100vh;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             margin: 0;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
             color: white;
             font-family: Arial, sans-serif;
+            text-align: center;
         }
         button {
+            margin-top: 20px;
             padding: 10px 20px;
             font-size: 16px;
             border: none;
             border-radius: 5px;
-            background-color: #fff;
-            color: #2575fc;
             cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        button:hover {
-            background-color: #f0f0f0;
         }
     </style>
 </head>
 <body>
-    <button id="myButton">Click Me!</button>
+    <h1>Welcome to My Web App!</h1>
+    <button id="colorToggleBtn">Click Me!</button>
 
     <script>
-        document.getElementById('myButton').addEventListener('click', function() {
-            alert('Button was clicked!');
+        const button = document.getElementById('colorToggleBtn');
+        let isBlue = false;
+
+        button.addEventListener('click', () => {
+            document.body.style.backgroundColor = isBlue ? 'red' : 'blue';
+            isBlue = !isBlue;
         });
     </script>
 </body>
 </html>
-```
-
-### Explanation:
-- **HTML Structure**: The app consists of a single button element with the text "Click Me!".
-- **CSS Styles**: The body has a gradient background that transitions from purple to blue. The button is styled with padding, a border radius, and changes color on hover.
-- **JavaScript**: An event listener is added to the button that triggers an alert when the button is clicked. 
-
-You can copy and paste this code into an HTML file and open it in a web browser to see it in action!
-<!-- build-id: 2025-10-15T09:41:45.206457 -->
+<!-- build-id: 2025-10-15T09:44:55.531366 -->
