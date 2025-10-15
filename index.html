@@ -3,27 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World Page</title>
+    <title>Hello World App</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0; /* Light gray background */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
         }
-        h1 {
-            color: blue; /* Blue text color */
+        #message {
+            font-size: 24px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1 id="greeting">Hello World</h1>
+    <h1 style="font-weight: bold;">Welcome to Round 2</h1>
+    <div id="message">Hello World!</div>
+    <button onclick="changeTextColor()">Change Text Color</button>
+
     <script>
-        // Inline JavaScript can be added here if needed
-        console.log("Page loaded successfully");
+        function changeTextColor() {
+            const colors = ['red', 'blue', 'green', 'orange', 'purple'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.getElementById('message').style.color = randomColor;
+        }
     </script>
 </body>
 </html>
-<!-- build-id: 2025-10-15T09:31:06.323650 -->
+```
+
+### Explanation:
+- **HTML Structure**: The app has a heading (`<h1>`), a message (`<div>`), and a button (`<button>`).
+- **CSS**: Basic styling is applied to center the text and set the font.
+- **JavaScript**: The `changeTextColor` function randomly changes the color of the text in the message div when the button is clicked. 
+
+You can copy and paste this code into an HTML file and open it in a web browser to see it in action!
+<!-- build-id: 2025-10-15T09:34:33.555080 -->
